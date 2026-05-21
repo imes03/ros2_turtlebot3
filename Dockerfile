@@ -101,7 +101,14 @@ RUN apt-get install -y \
     ros-humble-eigen-stl-containers \
     ros-humble-random-numbers \
     ros-humble-moveit-common \
-    ros-humble-nav2-bringup
+    ros-humble-nav2-bringup \
+    ros-humble-image-transport-plugins \
+    ros-humble-compressed-image-transport \
+    ros-humble-compressed-depth-image-transport \
+    ros-humble-theora-image-transport \
+    ros-humble-apriltag-ros \
+    ros-humble-rqt-image-view
+
 
 RUN apt-get update && apt-get install -y ros-humble-ur-client-library \
                    ros-humble-moveit-servo \
@@ -133,14 +140,14 @@ RUN apt-get update && apt-get install -y ros-humble-ur-client-library \
     
 # Initialize rosdep
 RUN rosdep init && rosdep update
-
+RUN echo 'export QT_X11_NO_MITSHM=1' >> ~/.bashrc
 RUN echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc 
 RUN echo 'export ROS_DOMAIN_ID=30 #TURTLEBOT3' >> ~/.bashrc
 RUN echo 'source /usr/share/gazebo/setup.sh' >> ~/.bashrc
 RUN echo 'source /opt/ros/humble/setup.bash' >> ~/.bashrc
 RUN echo 'export TURTLEBOT3_MODEL=burger' >> ~/.bashrc
 
-COPY play_with_scan.ipynb /ws_slam
+#  COPY play_with_scan.ipynb /ws_slam
  #
 #RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 

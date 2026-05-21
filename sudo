@@ -1,0 +1,10 @@
+[?2004h]0;root@myPC: /ws_slamroot@myPC:/ws_slam# sudo ./into_docker.sh                    
+[?2004lbash: s: command not found
+[?2004h]0;root@myPC: /ws_slamroot@myPC:/ws_slam# 
+[?2004l[?2004h]0;root@myPC: /ws_slamroot@myPC:/ws_slam# 
+[?2004l[?2004h]0;root@myPC: /ws_slamroot@myPC:/ws_slam# clear
+[?2004l[H[2J[3J[?2004h]0;root@myPC: /ws_slamroot@myPC:/ws_slam# ^C[?2004l[?2004h[?2004l
+[?2004h]0;root@myPC: /ws_slamroot@myPC:/ws_slam# 
+[?2004l[?2004h]0;root@myPC: /ws_slamroot@myPC:/ws_slam# ^C[?2004l[?2004h[?2004l
+[?2004h]0;root@myPC: /ws_slamroot@myPC:/ws_slam# exit
+[?2004lexit
